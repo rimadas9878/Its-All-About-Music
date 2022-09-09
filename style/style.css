@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    padding: 10px;
+    margin: 10px;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+#searchLyricsTextbox{
+    text-align: center;
+}
+#Content{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+#searchBtn{
+    text-align: center;
+    margin: 10px;
+}
+a{
+    padding: 10px;
+    margin: 10px;
+}
