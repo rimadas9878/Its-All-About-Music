@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyond Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+    <title>Beyond Music</title>
 </head>
 
 <body>
@@ -14,7 +17,7 @@
         <h1>Beyond Music</h1>
     </header>
     <section id="sectionLink">
-        <a id="artist">Artist</a>
+        <a id="artist">Album</a>
         <a id="video">Videos</a>
     </section>
 
@@ -22,37 +25,131 @@
     <section id="artistDetails">
 
         <section id="musicArtistContent">
-        <section id="artistContainer">
-            <section class="artist1" id="artistDetailSection">
-                <section id="artistImage">
-                    <img src="./Images/Daft_Punk.jpeg" alt="Daft_Punk" class="Daft_Punk" id="artistAlbumImage"></img>
-                </section>
-                <section>
-                    <p for="artistLabel1" class="artistLabel" id="artistLabel1">Daft Punk</p>
+            <section>
+                <input type="text" id="searchTextbox" placeholder="Search">
+                <button id="searchBtn">Search</button>
+            </section>
+            <section id="artistContainer">
+                <section class="artist1" id="artistDetailSection">
+                    <section>
+                        <p for="artistLabel1" class="artistLabel" id="artistLabelId">Daft Punk</p>
+                    </section>
                 </section>
             </section>
-        </section>
-        <section id="albumContainer">
-            <section class="albumDetailsSection" id="album1">
-                <a href="" id="homeworkAlbumlink" class="albumLink">
-                <img src="./Images/Homework.jpeg" alt="Homework" class="albumImage" id="HomeworkalbumImage" data-id="0"></img>
-                 </a>
-                <section>
-                    <p for="albumLabel" class="albumLabel" id="homeworkAlbumlink"></p>
+            <section id="albumContainer">
+
+                <section class="albumDetailsSection" id="album0">
+                    <a href="" id="homeworkAlbumlink" class="albumLink">
+                        <img src="./Images/Homework.jpeg" alt="Homework" class="albumImage" id="HomeworkalbumImage"
+                            data-id="0"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="homeworkAlbumlink"></p>
+                    </section>
                 </section>
-            </section>
-            <section class="albumDetailsSection" id="album2">
-                <img src="./Images/HumanAfterAll.jpeg" alt="HumanAfterAll" class="albumImage" id="HumanAfterAll" data-id="1"></img>
-                <section>
-                    <p for="albumLabel" class="albumLabel" id="humanAfterAllLink"></p>
+                <section class="albumDetailsSection" id="album1">
+                    <a href="" id="HumanAfterAlllink" class="albumLink">
+                        <img src="./Images/HumanAfterAll.jpeg" alt="HumanAfterAll" class="albumImage" id="HumanAfterAll"
+                            data-id="1"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="humanAfterAllLink"></p>
+                    </section>
                 </section>
+                <section class="albumDetailsSection" id="album2">
+                    <a href="" id="Tron" class="albumLink">
+                        <img src="./Images/Tron_Legacy.jpeg" alt="Tron" class="albumImage" id="Tron" data-id="2"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="humanAfterAllLink"></p>
+                    </section>
+                </section>
+                <section class="albumDetailsSection" id="album3">
+                    <a href="" id="Tron-R3CONF1GUR3D" class="albumLink">
+                        <img src="./Images/TRON_Legacy_R3CONF1GUR3D.jpeg" alt="Tron-R3CONF1GUR3D" class="albumImage"
+                            id="Tron-R3CONF1GUR3D" data-id="3"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="R3CONF1GUR3D"></p>
+                    </section>
+                </section>
+                <section class="albumDetailsSection" id="album4">
+                    <a href="" id="Discovery" class="albumLink">
+                        <img src="./Images/Discovery.jpeg" alt="Discovery" class="albumImage" id="Discovery"
+                            data-id="4"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="Discovery"></p>
+                    </section>
+                </section>
+                <section class="albumDetailsSection" id="album5">
+                    <a href="" id="Alive2007" class="albumLink">
+                        <img src="./Images/Alive2007.png" alt="Alive2007" class="albumImage" id="Alive2007"
+                            data-id="5"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="Discovery"></p>
+                    </section>
+                </section>
+                <section class="albumDetailsSection" id="album6">
+                    <a href="" id="MusiqueVolume1" class="albumLink">
+                        <img src="./Images/MusiqueVolume1.jpeg" alt="MusiqueVolume1" class="albumImage"
+                            id="MusiqueVolume1" data-id="6"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="MusiqueVolume1"></p>
+                    </section>
+                </section>
+                <section class="albumDetailsSection" id="album7">
+                    <a href="" id="MusiqueVolume1" class="albumLink">
+                        <img src="./Images/RandomAccessMemories.jpeg" alt="MusiqueVolume1" class="albumImage"
+                            id="RandomAccessMemories" data-id="7"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="RandomAccessMemories"></p>
+                    </section>
+                </section>
+                <section class="albumDetailsSection" id="album8">
+                    <a href="" id="DaftClub" class="albumLink">
+                        <img src="./Images/DaftClub.jpeg" alt="DaftClub" class="albumImage" id="DaftClub"
+                            data-id="8"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="DaftClub"></p>
+                    </section>
+                </section>
+                <section class="albumDetailsSection" id="album9">
+                    <a href="" id="Discovery" class="albumLink">
+                        <img src="./Images/Alive1997.jpg" alt="Alive1997" class="albumImage" id="Alive1997"
+                            data-id="9"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="Alive1997"></p>
+                    </section>
+                </section>
+                <section class="albumDetailsSection" id="album10">
+                    <a href="" id="HumanAfterAllRemixes" class="albumLink">
+                        <img src="./Images/HumanAfterAll- Remixes.jpeg" alt="HumanAfterAllRemixes" class="albumImage"
+                            id="HumanAfterAllRemixes" data-id="10"></img>
+                    </a>
+                    <section>
+                        <p for="albumLabel" class="albumLabel" id="HumanAfterAllRemixes"></p>
+                    </section>
+                </section>
+
             </section>
-        </section>
-        <section id="albumDetailsDisplayid1" class="albumDetailsDisplayclass">
-            <p id="albumName1" class="albumName">Name</p>
-            <p id="yearReleased1" class="yearReleased">year</p>
-            <p id="albumDescription1" class="albumDescription">description</p>
-        </section>
+            <section id="albumDetailsDisplayid" class="albumDetailsDisplayclass">
+                <h2>About The Album</h2>
+                <p id="albumName" class="albumName"></p>
+                <p id="yearReleased" class="yearReleased">
+                    1993-2021
+                </p>
+                <p id="albumDescription" class="albumDescription">
+                    Daft Punk were a French electronic music duo formed in 1993 in Paris by Thomas Bangalter and Guy-Manuel de Homem-Christo. 
+                    Widely regarded as one of the most influential acts in dance music history, they achieved popularity in the late 1990s as part of the French house movement. 
+                    They garnered critical acclaim and commercial success in the years following, combining elements of house music with funk, disco, indie rock and pop.
+                </p>
+            </section>
         </section>
     </section>
 

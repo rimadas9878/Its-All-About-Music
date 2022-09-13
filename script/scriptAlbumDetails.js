@@ -2,7 +2,8 @@
 var searchLyrics = document.getElementById('artistDetailsSearchLyricsTextbox');
 var searchLyricsBtn = document.getElementById('artistDetailsSearchBtn');
 var musicartistURL = 'https://theaudiodb.p.rapidapi.com/searchalbum.php?s=daft_punk';
-var Homework = document.getElementById('HomeworkalbumImage');
+
+//Used "Return all Album details from artist name"
 var options = {
     method: 'GET',
     headers: {
@@ -10,16 +11,25 @@ var options = {
         'X-RapidAPI-Host': 'theaudiodb.p.rapidapi.com'
     }
 };
-function displayAlbum1Details(){
-   
-    document.addEventListener('click', getAlbum1Details)
-    console.log(Homework);
+
+var displayDetailsContainer = document.getElementById('albumDetailsDisplayid')
+
+function albumDetailsDisplay(){
+    displayDetailsContainer.classList.remove('hide');
+
 }
-//Used "Return all Album details from artist name"
-// Artist Details Section
+function displayAlbum1Details(){ 
+    
+    document.addEventListener('click', getAlbum1Details)
+
+}
+
+
+
 function getAlbum1Details(event) {
+    albumDetailsDisplay();
     event.preventDefault();
-    console.log('hello');
+
     var dataid = event.target.dataset.id;
     console.log(dataid);
 
@@ -29,15 +39,16 @@ function getAlbum1Details(event) {
         })
         .then(function (data) {
 
-            const homeworkAlbumName = data.album[dataid].strAlbum;
-            const homeworkAlbumYear = data.album[dataid].intYearReleased;
-            const homeworkDescription = data.album[dataid].strDescriptionEN;
+            const AlbumName = data.album[dataid].strAlbum;
+            const AlbumYear = data.album[dataid].intYearReleased;
+            const Description = data.album[dataid].strDescriptionEN;
 
-            document.getElementById('albumName1').innerText = homeworkAlbumName;
-            document.getElementById('yearReleased1').innerText = homeworkAlbumYear;
-            document.getElementById('albumDescription1').innerText = homeworkDescription;
+            document.getElementById('albumName').innerText = AlbumName;
+            document.getElementById('yearReleased').innerText = AlbumYear;
+            document.getElementById('albumDescription').innerText = Description;
 
-            console.log(homeworkAlbumName, homeworkAlbumYear, homeworkDescription);
+
+            console.log(AlbumName, AlbumYear, Description);
 
         })
 }

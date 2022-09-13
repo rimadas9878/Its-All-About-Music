@@ -1,6 +1,10 @@
 *{
     margin: 0px;
     padding: 0px;
+   
+}
+body{
+    font-family:'Courier New', Courier, monospace;
 }
 
 header{
@@ -12,34 +16,48 @@ header{
 h1{
     text-align: center;
     padding: 30px;
-
+    background-color: rgb(235, 83, 83);
     
 }
 
 /* Header Links */
 #sectionLink{
     text-align: center;
-    
+    background-color: rgb(249, 217, 35);
     padding: 20px;
+    font-weight: bolder;
 }
 
 #artist{
     font-size: 25px;
-    margin: 10px;
+    margin: 0px 20px;
 }
 #video{
     font-size: 25px;
-    margin: 10px;
+    margin: 0px 20px;
 }
 
 /* Artist Details Section */
+#searchTextbox{
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#searchBtn{
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+
 #artistDetails{
    
     width: 100%;
     height: auto;
     text-align: center;    
-    margin: 0px;
-    padding: 0px;
+    background-color: rgb(54, 174, 124);
 
 }
 #musicArtistContent{
@@ -51,33 +69,31 @@ h1{
     padding: 10px;
     width: auto;
     height: auto;
-    margin: 20px;
+
+
 
 }
 #artistContainer{
     padding: 5px;
 }
 
-#artistDetailSection{
-   
-    padding: 5px 5px;
-    width: 180px;
-    height: 270px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+#artistDetailSection{  
+text-align: center;
 }
+#artistLabelId{
+    font-size: 40px;
+ 
+}
+
 #artistImage{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #artistDetailsContent{
-    text-align: center;
-   
+    text-align: center; 
     margin: 10px;
     padding: 200px 30px;
 
@@ -114,13 +130,16 @@ h1{
 
 #albumContainer{
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap;
     padding: 3px;
 }
-.albumDetailsDisplayclass{
-    border: 1px solid black;
-    width: 1000px;
+#albumDetailsDisplayid{
+    background-color: rgb(249, 217, 35);
+    width: 1500px;
     height: 400px;
+
 }
 
 .albumName{
