@@ -13,21 +13,78 @@
     <header>
         <h1>Beyond Music</h1>
     </header>
-    <section>
-        <a>Artist</a>
-        <a>Videos</a>
+    <section id="sectionLink">
+        <a id="artist">Artist</a>
+        <a id="video">Videos</a>
     </section>
+
+    <!-- Artist Details Section -->
     <section id="artistDetails">
-        <input type="text" placeholder="Search" id="searchLyricsTextbox">
-        <button id="searchBtn">Search</button><br>
+
+        <section id="musicArtistContent">
+        <section id="artistContainer">
+            <section class="artist1" id="artistDetailSection">
+                <section id="artistImage">
+                    <img src="./Images/Daft_Punk.jpeg" alt="Daft_Punk" class="Daft_Punk" id="artistAlbumImage"></img>
+                </section>
+                <section>
+                    <p for="artistLabel1" class="artistLabel" id="artistLabel1">Daft Punk</p>
+                </section>
+            </section>
+        </section>
+        <section id="albumContainer">
+            <section class="albumDetailsSection" id="album1">
+                <a href="" id="homeworkAlbumlink" class="albumLink">
+                <img src="./Images/Homework.jpeg" alt="Homework" class="albumImage" id="HomeworkalbumImage" data-id="0"></img>
+                 </a>
+                <section>
+                    <p for="albumLabel" class="albumLabel" id="homeworkAlbumlink"></p>
+                </section>
+            </section>
+            <section class="albumDetailsSection" id="album2">
+                <img src="./Images/HumanAfterAll.jpeg" alt="HumanAfterAll" class="albumImage" id="HumanAfterAll" data-id="1"></img>
+                <section>
+                    <p for="albumLabel" class="albumLabel" id="humanAfterAllLink"></p>
+                </section>
+            </section>
+        </section>
+        <section id="albumDetailsDisplayid1" class="albumDetailsDisplayclass">
+            <p id="albumName1" class="albumName">Name</p>
+            <p id="yearReleased1" class="yearReleased">year</p>
+            <p id="albumDescription1" class="albumDescription">description</p>
+        </section>
+        </section>
     </section>
-    
-    <section id="musicVideos">
-        <input type="text" placeholder="Search" id="searchLyricsTextbox">
-        <button id="searchBtn">Search</button><br>
+
+
+    <!-- Video Section -->
+    <section id="musicVideosDetails">
+
+        <section id="musicVideosContent">
+            <section class="videoSong1" id="songSection">
+                <img src="./Images/the-weeknd_knowing-video.jpeg" alt="the-weeknd_knowing" class="theWeekndKnowingImage"
+                    id="videoImage"></img>
+                <section>
+                    <p for="videoLabel1" class="videoLabel" id="songLabel1"></p>
+                </section>
+            </section>
+            <section class="videoSong2" id="songSection">
+                <img src="./Images/Wicked_Games.jpg" alt="Wicked_Games" class="wickedGames" id="videoImage"></img>
+                <section>
+                    <p for="videoLabel2" class="videoLabel" id="songLabel2"></p>
+                </section>
+            </section>
+
+        </section>
+        <section>
+            <img src="./Images/youtube_image.jpeg" id="youtubeVideoIcon">
+        </section>
     </section>
-    <script src="https://genius.codes"></script>
-    <script src="./script/script.js"></script>
+
+    <!-- <script src="https://genius.codes"></script> -->
+    <script src="./script/scriptAlbumDetails.js"></script>
+    <script src="./script/scriptVideoDetails.js"></script>
+
 </body>
 
 </html>
