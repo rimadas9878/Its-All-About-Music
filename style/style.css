@@ -61,46 +61,6 @@ h1{
 }
 /* Artist Details Section */
 
-
-
-
-.artistDetails{
-    border: 1px solid pink;
-    width: 100%;
-    height: auto;
-    /* overflow:hidden; */
-    position: relative;
-}
-#daftPunkContent, #LadyGagaContent{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    position: absolute;
-}
-#daftPunkContent {
-    background: red;
-    -webkit-transition: transform 1s ease;
-    
-}
-#daftPunkContent.animate {
-    transform: translate3d(-200px, 0, 0);
-    -webkit-transform: translate3d(-200px, 0, 0);
-    -webkit-transition: transform 1s ease;
-}
-#LadyGagaContent {
-    background: green;
-    transform: translate3d(400px, 0, 0);
-    -webkit-transform: translate3d(400px, 0, 0);
-    -webkit-transition: transform 1s ease;
-}
-#LadyGagaContent.animate {
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-transition: transform 1s ease;
-}
-
-
-
 #daftPunkContent{
    
     width: 100%;
