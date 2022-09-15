@@ -53,18 +53,16 @@ function getAlbum1Details(event) {
         })
 }
 // getAlbum1Details();
+
+
+$(document).ready(function () {
+    $('.artistDetails').on('click', '.daftPunkContent', function (ev) {
+        $(this).toggleClass('animate');
+        $('.LadyGagaContent').toggleClass('animate');
+    }).on('click', '.LadyGagaContent', function (ev) {
+        $(this).toggleClass('animate');
+        $('.daftPunkContent').toggleClass('animate');
+    });
+});
+
 displayAlbum1Details();
-
-
-function top10Songs() {
-
-}
-
-function userRatingOnAlbum() {
-
-}
-
-function userRatingOnTrack() {
-
-}
-
