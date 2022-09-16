@@ -3,6 +3,9 @@
     padding: 0px;
    
 }
+:root{
+    --red: rgb(235, 83, 83);
+}
 body{
     font-family:'Courier New', Courier, monospace;
 }
@@ -16,10 +19,13 @@ header{
 h1{
     text-align: center;
     padding: 30px;
-    background-color: rgb(235, 83, 83);
-    
+    background-color: var( --red);
+    font-size: 70px;
 }
-
+#headerImageAndText{
+    display: flex;
+    flex-direction: row;
+}
 
 /* Header Links */
 #sectionLink{
@@ -60,6 +66,7 @@ h1{
     margin: 10px;
 }
 /* Artist Details Section */
+
 
 #daftPunkContent{
    
@@ -139,7 +146,7 @@ text-align: center;
 }
 #albumDetailsDisplayid{
     background-color: rgb(249, 217, 35);
-    width: 1500px;
+    width: 100%;
     height: 400px;
 
 }
@@ -154,16 +161,41 @@ text-align: center;
     font-size: 30px;
     margin: 10px;
 }
-.albumDescription{
-
+#albumDescriptionid{
     font-size: 20px;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+label{
+    font-weight: bolder;
+    font-size: larger;
 }
 
+#mostSearchedAlbum{
+background-color: var( --red);
+padding: 30px;
+}
+
+#mostSearchHeading{
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#itemDisplayedHere{
+    padding: 25px;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+}
 
 /* Video Section */
 #musicVideosDetails{
-   
+  
     width: 100%;
     height: auto;
     text-align: center;
@@ -217,7 +249,30 @@ text-align: center;
 
 }
 
-
+@media (max-width:992px) {
+    body {
+        width: 100%;
+    }
+    .albumDescription{
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+    body {
+        width: 100%;
+    }
+    .albumDescription{
+        width: 100%;
+    }
+}
+@media (max-width:481px) {
+    body {
+        width: 50%;
+    }
+    .albumDescription{
+        width: 50%;
+    }
+}
 
 
 

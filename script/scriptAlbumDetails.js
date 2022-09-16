@@ -1,9 +1,11 @@
 //https://rapidapi.com/theaudiodb/api/theaudiodb/
-var searchLyrics = document.getElementById('artistDetailsSearchLyricsTextbox');
-var searchLyricsBtn = document.getElementById('artistDetailsSearchBtn');
+//Used "Return all Album details from artist name"
+
+
+
+// Adding albums to the page and on click viewing the details of the Album
 var musicartistURL = 'https://theaudiodb.p.rapidapi.com/searchalbum.php?s=daft_punk';
 
-//Used "Return all Album details from artist name"
 var options = {
     method: 'GET',
     headers: {
@@ -14,21 +16,11 @@ var options = {
 
 var displayDetailsContainer = document.getElementById('albumDetailsDisplayid')
 
-function albumDetailsDisplay(){
-    displayDetailsContainer.classList.remove('hide');
-
-}
-function displayAlbum1Details(){ 
-    
-    document.addEventListener('click', getAlbum1Details)
-
-}
-
-
 
 function getAlbum1Details(event) {
-    albumDetailsDisplay();
     event.preventDefault();
+    albumDetailsDisplay();
+
 
     var dataid = event.target.dataset.id;
     console.log(dataid);
@@ -39,6 +31,8 @@ function getAlbum1Details(event) {
         })
         .then(function (data) {
 
+
+            console.log(data.album);
             const AlbumName = data.album[dataid].strAlbum;
             const AlbumYear = data.album[dataid].intYearReleased;
             const Description = data.album[dataid].strDescriptionEN;
@@ -47,22 +41,54 @@ function getAlbum1Details(event) {
             document.getElementById('yearReleased').innerText = AlbumYear;
             document.getElementById('albumDescription').innerText = Description;
 
-
             console.log(AlbumName, AlbumYear, Description);
 
+            if (!search.includes(AlbumName)) {
+                search.push(AlbumName);
+                localStorage.searchItem = JSON.stringify(search);
+            }
         })
 }
-// getAlbum1Details();
 
+function albumDetailsDisplay() {
+    displayDetailsContainer.classList.remove('hide');
 
-$(document).ready(function () {
-    $('.artistDetails').on('click', '.daftPunkContent', function (ev) {
-        $(this).toggleClass('animate');
-        $('.LadyGagaContent').toggleClass('animate');
-    }).on('click', '.LadyGagaContent', function (ev) {
-        $(this).toggleClass('animate');
-        $('.daftPunkContent').toggleClass('animate');
-    });
-});
+}
+function displayAlbum1Details() {
+
+    var getAlbumDetails = document.getElementById('daftPunkContent');
+    console.log(getAlbumDetails);
+    getAlbumDetails.addEventListener('click', getAlbum1Details);
+}
 
 displayAlbum1Details();
+
+
+//LocalStorage
+function searchItem() {
+    var searchValue = document.getElementById('searchTextbox').value
+    localStorage.setItem('searchValue', searchValue);
+
+    var searchHistory = localStorage.getItem('searchValue');
+
+    document.getElementById('itemDisplayedHere').innerText = searchHistory;
+}
+
+var search = JSON.parse(localStorage.getItem('searchItem')) || []
+
+var searchBtn = document.getElementById('searchBtn');
+searchBtn.addEventListener('click', searchItem);
+
+
+
+// $(document).ready(function () {
+//     $('.artistDetails').on('click', '.daftPunkContent', function (ev) {
+//         $(this).toggleClass('animate');
+//         $('.LadyGagaContent').toggleClass('animate');
+//     }).on('click', '.LadyGagaContent', function (ev) {
+//         $(this).toggleClass('animate');
+//         $('.daftPunkContent').toggleClass('animate');
+//     });
+// });
+
+
