@@ -24,9 +24,9 @@
     </header>
     <section id="sectionLink">
         <a href="#artistDetails" id="artist">Daft Punk</a>
-        <a href="#allArtistSearchSection" id="artist">Singer</a>
-        <a href="#mostSearchedAlbum" id="artist">Most Recent Search</a>      
-        <a id="video">Videos</a>
+        <a href="#allArtistSearchSection" id="artist">Search Artist</a>
+        <a href="#mostSearchedAlbum" id="artist">Most Recent Album Search</a>
+        <a href="#musicVideosDetails" id="video">Videos</a>
     </section>
 
 
@@ -51,7 +51,7 @@
                 <section class="albumDetailsSection" id="album0" data-title="Homework">
                     <a href="" id="homeworkAlbumlink" class="albumLink">
                         <img src="./Images/Homework.jpeg" alt="Homework" class="albumImage" id="HomeworkalbumImage"
-                            data-id="0"></img>
+                            data-id="0" ></img>
                     </a>
                     <label for="Homework">Homework</label>
                     <section>
@@ -176,28 +176,55 @@
         </section>
     </section>
 
-        <!-- Displays details of most recently searched item -->
-        <section id="mostSearchedAlbum">
-            <section>
-                <h3 id="mostSearchHeading">Recently Searched Albums</h3>
-            </section>
-            <section id="itemDisplayedHere">
+    <!-- Displays details of most recently searched item -->
     
+    <section id="mostSearchedAlbum">
+        <section>
+            <h3 id="mostSearchHeading">Recently Searched Albums</h3>
+        </section>
+        <section id="itemDisplayedHere">
+
+        </section>
+    </section>
+
+    <!-- All Artist Details Section -->
+
+    <section class="allArtistDetails">
+        
+        <section id="allArtistSearchSection" class="searchSection">
+            <h2 id="otherArtist">Search For Other Artist</h2>
+            <input type="text" id="allSearchTextbox" placeholder="Artist Name">
+            <button id="allSearchBtn">Search Artist</button>
+        </section>
+
+        <section class="allArtistDetailsSection">
+
+
+        </section>
+    </section>
+
+    <!-- Video Section -->
+    <section id="musicVideosDetails">
+        <section id="musicVideosContent">
+            <section id="videoSection">
+            <h2 id="Video">Videos</h2>
+             </section>
+            <section class="videoSong1" id="songSection">
+                <img src="./Images/the-weeknd_knowing-video.jpeg" alt="the-weeknd_knowing" class="theWeekndKnowingImage"
+                    id="videoImage"></img>
+                <section>
+                    <p for="videoLabel1" class="videoLabel" id="songLabel1"></p>
+                </section>
+            </section>
+            <section class="videoSong2" id="songSection">
+                <img src="./Images/Wicked_Games.jpg" alt="Wicked_Games" class="wickedGames" id="videoImage"></img>
+                <section>
+                    <p for="videoLabel2" class="videoLabel" id="songLabel2"></p>
+                </section>
             </section>
         </section>
 
-    <!-- All Artist Details Section -->
-    <section class="allArtistDetails">
-    <section id="allArtistSearchSection" class="searchSection">
-        <input type="text" id="allSearchTextbox" placeholder="Singer Name">
-        <button id="allSearchBtn">Search Album</button>
     </section>
-
-    <section class="allArtistDetailsSection">
-
-
-    </section>
-</section>
 
 
 
