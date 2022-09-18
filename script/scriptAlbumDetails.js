@@ -39,7 +39,7 @@ function getAlbum1Details(event) {
 
             document.getElementById('albumName').innerText = AlbumName;
             document.getElementById('yearReleased').innerText = AlbumYear;
-            document.getElementById('albumDescription').innerText = Description;
+            document.getElementById('albumDescriptionid').innerText = Description;
 
             console.log(AlbumName, AlbumYear, Description);
 
@@ -79,16 +79,5 @@ var search = JSON.parse(localStorage.getItem('searchItem')) || []
 var searchBtn = document.getElementById('searchBtn');
 searchBtn.addEventListener('click', searchItem);
 
-
-
-// $(document).ready(function () {
-//     $('.artistDetails').on('click', '.daftPunkContent', function (ev) {
-//         $(this).toggleClass('animate');
-//         $('.LadyGagaContent').toggleClass('animate');
-//     }).on('click', '.LadyGagaContent', function (ev) {
-//         $(this).toggleClass('animate');
-//         $('.daftPunkContent').toggleClass('animate');
-//     });
-// });
 
 

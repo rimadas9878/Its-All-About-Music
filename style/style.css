@@ -1,50 +1,56 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-   
+
 }
-:root{
+
+:root {
     --red: rgb(235, 83, 83);
 }
-body{
-    font-family:'Courier New', Courier, monospace;
+
+body {
+    font-family: 'Courier New', Courier, monospace;
 }
 
-header{
-    
+header {
+
     padding: 0px;
     margin: 0px;
 }
 
-h1{
+h1 {
     text-align: center;
     padding: 30px;
-    background-color: var( --red);
+    background-color: var(--red);
     font-size: 70px;
 }
-#headerImageAndText{
+
+#headerImageAndText {
     display: flex;
     flex-direction: row;
 }
 
 /* Header Links */
-#sectionLink{
+#sectionLink {
     text-align: center;
     background-color: rgb(249, 217, 35);
     padding: 20px;
     font-weight: bolder;
 }
 
-#artist{
+#artist {
     font-size: 25px;
     margin: 0px 20px;
 }
-#video{
+
+
+#video {
     font-size: 25px;
     margin: 0px 20px;
 }
+
 /* Search Section */
-#searchSection{
+#searchSection {
     padding: 10px 50px;
     border-radius: 5px;
     text-align: center;
@@ -52,27 +58,25 @@ h1{
 
 }
 
-#searchTextbox{
+#searchTextbox {
     padding: 10px 50px;
     border-radius: 5px;
     text-align: center;
 }
 
-#searchBtn{
+#searchBtn {
     padding: 10px 30px;
     border-radius: 5px;
     text-align: center;
     font-size: 15px;
     margin: 10px;
 }
+
 /* Artist Details Section */
+#daftPunkContent {
 
-
-#daftPunkContent{
-   
-    width: 100%;
     height: auto;
-    text-align: center;    
+    text-align: center;
     background-color: rgb(54, 174, 124);
     display: flex;
     align-items: center;
@@ -82,32 +86,34 @@ h1{
 
 }
 
-#artistContainer{
+#artistContainer {
     padding: 5px;
 }
 
-#artistDetailSection{  
-text-align: center;
-}
-#artistLabelId{
-    font-size: 40px;
- 
+#artistDetailSection {
+    text-align: center;
 }
 
-#artistImage{
+#artistLabelId {
+    font-size: 40px;
+
+}
+
+#artistImage {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#artistDetailsContent{
-    text-align: center; 
+#artistDetailsContent {
+    text-align: center;
     margin: 10px;
     padding: 200px 30px;
 
 }
-#artistAlbumImage{
+
+#artistAlbumImage {
 
     padding: 5px;
     margin: 5px;
@@ -117,8 +123,9 @@ text-align: center;
     justify-content: center;
     align-items: center;
 }
-.albumDetailsSection{
-   
+
+.albumDetailsSection {
+
     padding: 2px 5px;
     width: 180px;
     height: 270px;
@@ -127,122 +134,184 @@ text-align: center;
     align-items: center;
     flex-direction: column;
 }
-#albumImageContainer{
-   
+
+#albumImageContainer {
+
     padding: 5px 5px;
 
 }
-.albumImage{
+
+.albumImage {
     width: 150px;
     height: 200px;
 }
 
-#albumContainer{
+#albumContainer {
     display: flex;
     justify-content: space-around;
     width: 70%;
     flex-wrap: wrap;
     padding: 3px;
 }
-#albumDetailsDisplayid{
+
+#albumDetailsDisplayid {
     background-color: rgb(249, 217, 35);
     width: 100%;
     height: 400px;
 
 }
 
-.albumName{
+.albumName {
     font-weight: bolder;
     font-size: 30px;
     margin: 10px;
 }
-.yearReleased{
+
+.yearReleased {
     font-weight: bolder;
     font-size: 30px;
     margin: 10px;
 }
-#albumDescriptionid{
+
+#albumDescriptionid {
     font-size: 20px;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-label{
+
+label {
     font-weight: bolder;
     font-size: larger;
 }
 
-#mostSearchedAlbum{
-background-color: var( --red);
-padding: 30px;
+#mostSearchedAlbum {
+    background-color: var(--red);
+    padding: 20px;
 }
 
-#mostSearchHeading{
+#mostSearchHeading {
     text-align: center;
     font-size: 30px;
     display: flex;
     justify-content: space-around;
-    
+
 }
 
-#itemDisplayedHere{
+#itemDisplayedHere {
     padding: 25px;
     margin: 5px;
     font-size: 30px;
     text-align: center;
 }
 
+/* All Album Section */
+
+#allArtistContainer{
+    padding: 5px;
+}
+#allArtistDetailSectionClass {
+    text-align: center;
+}
+
+#allArtistSearchSection {
+    padding: 10px 60px;
+    border-radius: 5px;
+    background-color: rgb(24, 116, 152);
+    text-align: center;
+
+}
+
+#allSearchTextbox {
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#allSearchBtn {
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.allArtistDetailsSection{
+    background-color: rgb(54, 174, 124);
+
+}
+.allAlbumDetailsSection{
+    display: inline-grid;
+    padding: 10px;
+}
+
+.allAlbumFetchedContent{
+    display: flex;
+    justify-content: space-around;
+}
+#allArtistLabelId {
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
 /* Video Section */
-#musicVideosDetails{
-  
+#musicVideosDetails {
+
     width: 100%;
     height: auto;
     text-align: center;
-    
+
     margin: 0px;
     padding: 0px
 }
-#musicVideosSearchTextbox{
+
+#musicVideosSearchTextbox {
     text-align: center;
     margin: 10px;
     padding: 8px 100px;
 }
-#musicVideosSearchBtn{
+
+#musicVideosSearchBtn {
     text-align: center;
     margin: 10px;
     padding: 10px 40px;
-    
+
     border-radius: 5px;
 }
-#musicVideosContent{
-   
+
+#musicVideosContent {
+
     display: flex;
-    justify-content:row;
+    justify-content: row;
 
     width: auto;
     height: auto;
 
 }
-#videoImage{
+
+#videoImage {
 
     padding: 5px;
     margin: 5px;
     width: 150px;
     height: 200px;
 }
-#songSection{
-   
+
+#songSection {
+
     padding: 5px 5px;
     width: 180px;
     height: 270px;
 
 }
-#videoLabel{
+
+#videoLabel {
     text-align: center;
 }
 
-#youtubeVideoIcon{
+#youtubeVideoIcon {
     height: 400px;
     width: 1000px;
     padding: 20px;
@@ -253,26 +322,28 @@ padding: 30px;
     body {
         width: 100%;
     }
-    .albumDescription{
+
+    .albumDescription {
         width: 100%;
     }
 }
+
 @media (max-width:768px) {
     body {
         width: 100%;
     }
-    .albumDescription{
+
+    .albumDescription {
         width: 100%;
     }
 }
+
 @media (max-width:481px) {
     body {
         width: 50%;
     }
-    .albumDescription{
+
+    .albumDescription {
         width: 50%;
     }
 }
-
-
-
