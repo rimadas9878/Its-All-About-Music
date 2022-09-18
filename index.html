@@ -18,14 +18,18 @@
 
 <body>
     <header>
-
         <h1>It's All About Music</h1>
-    </section>
+        </section>
     </header>
     <section id="sectionLink">
         <a href="#artistDetails" id="artist">Album</a>
         <a href="#mostSearchedAlbum" id="artist">Most Recent Search</a>
         <a href="#smusicVideosDetails" id="artist">Videos</a>
+        <a href="#artistDetails" id="artist">Daft Punk</a>
+        <a href="#allArtistSearchSection" id="artist">Singer</a>
+        <a href="#mostSearchedAlbum" id="artist">Most Recent Search</a>      
+        <a id="video">Videos</a>
+
     </section>
 
 
@@ -164,7 +168,8 @@
                     Active Years: 1993-2021
                 </p>
                 <p id="albumDescriptionid" class="albumDescriptionclass">
-                    <b>Daft Punk</b> Were a French electronic music duo formed in 1993 in Paris by Thomas Bangalter and Guy-Manuel de Homem-Christo.
+                    <b>Daft Punk</b> Were a French electronic music duo formed in 1993 in Paris by Thomas Bangalter and
+                    Guy-Manuel de Homem-Christo.
                     Widely regarded as one of the most influential acts in dance music history, they achieved popularity
                     in the late 1990s as part of the French house movement.
                     They garnered critical acclaim and commercial success in the years following, combining elements of
@@ -172,27 +177,26 @@
                 </p>
             </section>
         </section>
-        <section id="mostSearchedAlbum">
-            <section>
-            <h3 id="mostSearchHeading">Recently Searched Albums</h3>
-             </section>
-            <section id="itemDisplayedHere">
-                
-            </section>
-        </section> 
-
-        <!-- <section class="artistDetailspage2" id="LadyGagaContent">
-                <section class="artist1" id="artistDetailSection">
-                    <section>
-                        <p for="artistLabel1" class="artistLabel" id="artistLabelId">Lady GaGa</p>
-                    </section>
-                </section>
-        </section> -->
     </section>
 
+        <!-- Displays details of most recently searched item -->
+        <section id="mostSearchedAlbum">
+            <section>
+                <h3 id="mostSearchHeading">Recently Searched Albums</h3>
+            </section>
+            <section id="itemDisplayedHere">
+    
+            </section>
+        </section>
 
-    <!-- Video Section -->
-    <section id="musicVideosDetails">
+    <!-- All Artist Details Section -->
+    <section class="allArtistDetails">
+    <section id="allArtistSearchSection" class="searchSection">
+        <input type="text" id="allSearchTextbox" placeholder="Singer Name">
+        <button id="allSearchBtn">Search Album</button>
+    </section>
+
+    <section class="allArtistDetailsSection">
 
         <section id="musicVideosContent">
             <section class="videoSong1" id="songSection">
@@ -217,10 +221,14 @@
         <section>
             <img src="./Images/youtube_image.jpeg" id="youtubeVideoIcon">
         </section>
-    </section>
 
-    <!-- <script src="https://genius.codes"></script> -->
+    </section>
+</section>
+
+
+
     <script src="./script/scriptAlbumDetails.js"></script>
+    <script src="./script/scriptAlbumSearch.js"></script>
     <script src="./script/scriptVideoDetails.js"></script>
 
 </body>
